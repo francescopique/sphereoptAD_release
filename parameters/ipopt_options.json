@@ -1,0 +1,13 @@
+{
+    "ipopt": {
+        "hessian_approximation": "limited-memory",
+        "tol": 1e-4,
+        "max_iter": 1000000,
+        "linear_solver": "ma57",
+        "mu_strategy": "adaptive",
+        "max_cpu_time": 600,
+        "print_frequency_iter": 100
+
+    },
+    "expand": true
+}
