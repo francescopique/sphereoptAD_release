@@ -40,20 +40,20 @@ def solve_problem(opti, ipopt_options):
 
 def run_optimization(init_params,data, trialNames, externalFunctionFolder,mode ='all'):
 
-    if mode=='only_q':
-        import optimization.variants.only_q as variant
-    elif mode == 'only_mu':
-        import optimization.variants.only_mu as variant
+    if mode=='only_mech_q_set':
+        import optimization.variants.only_mech_q_set as variant
+    # elif mode == 'only_mu':
+    #     import optimization.variants.only_mu_alt_scal_q as variant
     elif mode=='all':
         import optimization.variants.all as variant
-    elif mode=='no_q':
-        import optimization.variants.no_q as variant
-    elif mode=='no_q_set':
-        import optimization.variants.no_q_set as variant
-    elif mode=='only_q_set':
-        import optimization.variants.only_q_set as variant
-    elif mode=='only_K_c':
-        import optimization.variants.only_K_c as variant
+    # elif mode=='no_q':
+    #     import optimization.variants.no_q as variant
+    # elif mode=='no_q_set':
+    #     import optimization.variants.no_q_set as variant
+    # elif mode=='only_q_set':
+    #     import optimization.variants.only_q_set as variant
+    # elif mode=='only_K_c':
+    #     import optimization.variants.only_K_c as variant
     else:
         print('Wrong mode type!')
         return 1
