@@ -4,8 +4,8 @@ import evaluation
 
 ###     SETTINGS     ###
 
-externalFunctionFolder = 'model_6sferenostro_r32_alte_alt' # nostre posizioni, raggio falisse ma stessa comp.
-# externalFunctionFolder = 'model_6sferenostro_r32_alte_vecchio_alt' 
+externalFunctionFolder = 'model_new'
+# externalFunctionFolder = 'model_vecchio'
 results_folder = 'results/'
 model_path = 'opensimAD\\' + externalFunctionFolder  + '\model.osim'
 
@@ -19,10 +19,10 @@ full_set = ['gait_14','gait_15','gait_23',
 
 # new:
 # filename = '130326_1449.pickle' # only kine and mu
-# filename = '100326_1111.pickle' # all
-filename = '160326_1733.pickle' # only mech
+filename = '100326_1111.pickle' # all
+# filename = '160326_1733.pickle' # only mech
 
-# old:
+# old: (Standard HC)
 # filename = '050326_1028.pickle'
 pickle_file = results_folder + filename
 

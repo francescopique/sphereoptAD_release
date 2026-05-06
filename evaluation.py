@@ -239,7 +239,7 @@ def plot_mean_std_grf(true,computed):
 
     fig, axs = plt.subplots(2,3)
 
-    titles = ['GRFx','GRFy','GRFz','COPx','COPy','COPz']
+    titles = ['GRFx','GRFy','GRFz','COPx','My','COPz']
     for i,ax in enumerate(axs.flat):
         ax.plot(time,true_mean[:,i],color='black')
         ax.fill_between(
